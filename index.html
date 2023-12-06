@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body id="home">
+    <nav id="desktop-nav">
+        <div class="logo">Tharani kumar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Tharani kumar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="togglemenu()" >Home</a></li>
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#resume" onclick="togglemenu()">resume</a></li>
+                <li><a href="#contact" onclick="togglemenu()">contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="profile.jpg">
+        </div>
+        
+        <div class="section__text">
+          <p class="section__text__p1">Hello Everyone, I'm</p>
+          <h1 class="title">Tharani Kumar</h1>
+          <p class="section__text__p2">Web Developer</p>
+          <div id="socials-container">
+            <img src="linkedin.png" class="icon"onclick="location.href='https://linkedin.com/'"/>
+            <img src="github.png" class="icon" onclick="location.href='https://github.com/'"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="education.png" class="icon"/>
+                <h3>Education</h3>
+                <p>B.Tech <br />Information technology</p>
+              </div>
+              <div class="details-container">
+                <img src="skills.png"class="icon"/>
+                <h3>Skills</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>Java,C</li>
+                  <li>HTML,CSS</li>
+                  <li>Javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Hello Everyone, I'm Tharani Kumar.A passionate
+                Web Developer with a flair for crafting immersive
+                online experiences.My journey of learning Web Development
+                started from the 1st year my college.Proficient in HTML,
+                CSS, and Javascript, I specialize in creating responsive
+                with hands-on-experience.
+              </p>
+            </div>
+          </div>
+          <div class="section__pic-container">
+            <img src="profile 2.jpg" class="about-pic"/>
+          </div>
+        </div>
+        <img src="arrow.png"alt="Arrow icon"class="icon arrow" onclick="location.href='#resume'"/>
+      </section>
+
+      <section id="resume">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Resume</h1><br><br><br><br><br>
+        <p class="section__text__p1">Here is my resume to present a concise, 
+          well-organized summary of my education, work experience, skills, accomplishments, 
+          and qualifications.</p><br><br><br><br><br>
+        <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download 
+        </button>
+        </div>
+        <img src="arrow.png" class="icon arrow" onclick="location.href='#contact'"/>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <a href="https://in.linkedin.com/"><img src="linkedin.png" class="icon contact-icon con-icon"></a>
+            <p>LinkedIn</p>
+          </div>
+        </div>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <a href="https://www.instagram.com"><img src="insta.png" 
+              class="icon contact-icon con-icon"/></a>
+            <p>Instagram</p>
+          </div>
+        </div>
+      </section><br><br><br>
+      <footer>
+        <div class="footerContainer">
+        <div class="footerbottom">
+          <p>Copyright &#169; 2023 Tharani Kumar. All Rights Reserved.</p>
+        </div>
+        </div>
+      </footer>
+ 
+    <script>
+        function togglemenu(){
+            const menu =document.querySelector(".menu-links");
+            const icon =document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    </script>
+
+</body>
+</html>
